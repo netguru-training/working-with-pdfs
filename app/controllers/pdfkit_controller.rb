@@ -5,7 +5,6 @@ class PdfkitController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-        pdf = PrawnReport.new(products)
         send_data kit.to_pdf, filename: 'report.pdf', type: 'application/pdf'
       end
     end
