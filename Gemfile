@@ -31,6 +31,8 @@ gem 'wicked_pdf'
 
 gem 'wkhtmltopdf-binary'
 
+gem 'pdfkit'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
