@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'prawn' => 'prawn#generate'
   get 'wicked_pdf' => 'wicked_pdf#generate'
+  get 'pdfkit/generate_manual' => 'pdfkit#generate_manual'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
