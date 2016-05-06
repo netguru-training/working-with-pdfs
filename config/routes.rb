@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
   get 'prawn' => 'prawn#generate'
   get 'wicked_pdf' => 'wicked_pdf#generate'
   get 'pdfkit/generate_manual' => 'pdfkit#generate_manual'
