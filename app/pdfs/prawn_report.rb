@@ -1,6 +1,6 @@
 class PrawnReport < Prawn::Document
   def initialize(products)
-    super()
+    super
     @products = products
     header
     text_content
