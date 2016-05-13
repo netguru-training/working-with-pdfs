@@ -9,6 +9,15 @@ class WickedPdfController < ApplicationController
     end
   end
 
+  def generate_to_file
+    @products = products
+    render pdf: 'foo',
+       save_to_file: Rails.root.join('tmp', "wicked_report.pdf"),
+       save_only: true,
+       template: 'wicked_pdf/generate'
+    redirect_to root_path, notice: 'PDF generated'
+  end
+
   private
 
   def products
