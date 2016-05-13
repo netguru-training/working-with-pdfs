@@ -86,6 +86,8 @@ GEM
     multi_json (1.12.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    pdf-inspector (1.2.1)
+      pdf-reader (~> 1.0)
     pdf-reader (1.4.0)
       Ascii85 (~> 1.0.0)
       afm (~> 0.2.1)
@@ -191,6 +193,7 @@ DEPENDENCIES
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  pdf-inspector
   pdfkit
   prawn
   rails (= 4.2.6)

@@ -35,6 +35,7 @@ gem 'pdfkit'
 
 group :test do
   gem 'rspec-rails'
+  gem 'pdf-inspector', require: "pdf/inspector"
 end
 
 # Use ActiveModel has_secure_password
