@@ -33,6 +33,8 @@ gem 'wkhtmltopdf-binary'
 
 gem 'pdfkit'
 
+gem 'pdf-forms'
+
 group :test do
   gem 'rspec-rails'
   gem 'pdf-inspector', require: "pdf/inspector"
