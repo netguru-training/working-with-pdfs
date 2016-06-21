@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'wicked_pdf_to_file' => 'wicked_pdf#generate_to_file'
   get 'pdfkit/generate_manual' => 'pdfkit#generate_manual'
   get 'read_pdf' => 'pdf#read'
+  get 'fill_pdf_forms' => 'pdf#fill'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
