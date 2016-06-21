@@ -6,7 +6,7 @@ class PdfController < ApplicationController
 
   def fill
     path = Rails.root.join('public', 'testformpdf.pdf')
-    filled_pdf_path = FillPdf.new(path, firstname: 'Test')
+    filled_pdf_path = FillPdf.new(path, firstname: 'Test').call
     send_file filled_pdf_path
   end
 end

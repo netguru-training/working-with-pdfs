@@ -5,7 +5,7 @@ class FillPdf
   end
 
   def call
-    pdftk.fill_form @file_path, tmp_file_path, options
+    pdftk.fill_form @file_path, tmp_file_path, @options
     tmp_file_path
   end
 
